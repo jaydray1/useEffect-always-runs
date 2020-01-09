@@ -5,8 +5,11 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Test useEffect</h1>
+      <h2>
+        Open your console and click either the checkbox or the button to see the
+        useEffect run after every state update.
+      </h2>
       <Check />
     </div>
   );
