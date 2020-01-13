@@ -7,7 +7,7 @@ const App = () => {
   const [random, setRandom] = React.useState(1);
 
   React.useEffect(() => {
-    console.log("updated");
+    console.log("Rendered");
   });
 
   const updateRandom = () => {
