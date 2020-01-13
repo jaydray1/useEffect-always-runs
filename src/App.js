@@ -2,15 +2,30 @@ import React from "react";
 import Check from "./Check";
 import "./styles.css";
 
-export default function App() {
+const App = () => {
+  const [checkedBool, setBool] = React.useState(false);
+  const [random, setRandom] = React.useState(1);
+
+  const updateRandom = () => {
+    setRandom(Math.random() * 2);
+  };
+
+  const updateChecker = () => {
+    setBool(!checkedBool);
+  };
+
   return (
     <div className="App">
+      <p>{random}</p>
+      <p>{checkedBool.toString().toUpperCase()}</p>
       <h1>Test useEffect</h1>
-      <h2>
-        Open your console and click either the checkbox or the button to see the
-        useEffect run after every state update.
-      </h2>
-      <Check />
+      <Check
+        random={updateRandom}
+        checker={updateChecker}
+        checkedNumber={checkedBool}
+      />
     </div>
   );
-}
+};
+
+export default App;
