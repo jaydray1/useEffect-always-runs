@@ -6,6 +6,10 @@ const App = () => {
   const [checkedBool, setBool] = React.useState(false);
   const [random, setRandom] = React.useState(1);
 
+  React.useEffect(() => {
+    console.log("updated");
+  });
+
   const updateRandom = () => {
     setRandom(Math.random() * 2);
   };
