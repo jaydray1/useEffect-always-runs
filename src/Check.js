@@ -37,10 +37,6 @@ const CustomButton = styled.button`
 `;
 
 const Check = ({ random, checker, checkedBool }) => {
-  React.useEffect(() => {
-    console.log("Clicked");
-  });
-
   return (
     <Container>
       <CheckboxHolder>
@@ -51,7 +47,7 @@ const Check = ({ random, checker, checkedBool }) => {
           name="checker"
           onClick={checker}
         />
-        <label for="checker">Check Me!</label>
+        <label htmlFor="checker">Check Me!</label>
       </CheckboxHolder>
       <ButtonHolder>
         <CustomButton onClick={random}>Press Me!</CustomButton>
