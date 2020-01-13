@@ -23,6 +23,7 @@ const App = () => {
       <p>{random}</p>
       <p>{checkedBool.toString().toUpperCase()}</p>
       <h1>Test useEffect</h1>
+      <p>Open up your console to see useEffect in action</p>
       <Check
         random={updateRandom}
         checker={updateChecker}
